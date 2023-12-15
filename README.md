@@ -26,7 +26,7 @@
 ![](https://github.com/eyupogluuu/MVCProKampi/blob/master/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/headinglist2.PNG)<br> <br>
 ![](https://github.com/eyupogluuu/MVCProKampi/blob/master/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/search.PNG)<br> <br>
 ![](https://github.com/eyupogluuu/MVCProKampi/blob/master/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/writerss.PNG)<br> <br>
-![](https://github.com/eyupogluuu/MVCProKampi/blob/master/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/yazargelenkutusu.PNG)<br> <br>
+![](https://github.com/eyupogluuu/MVCProKampi/blob/master/messagelist.PNG)<br> <br>
 ![](https://github.com/eyupogluuu/MVCProKampi/blob/master/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/sayfalama.PNG)<br> <br>
 
 
