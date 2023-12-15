@@ -1,0 +1,33 @@
+﻿@model EntityLayer.Concrete.Heading
+@{
+    ViewBag.Title = "headingUpdate";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<div class="container">
+    <h2 class="offcanvas-header" style="margin-left:350px;">Başlık Güncelleme Sayfası</h2>
+</div>
+<br />
+<div class="container">
+    @using (Html.BeginForm("headingUpdate", "Heading", FormMethod.Post))
+    {
+        <div>
+            @Html.HiddenFor(x => x.headingID)
+            @Html.Label("Başlık Adı:")
+            @Html.TextBoxFor(x => x.headingName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.headingName, "", new { @class = "text-danger" })
+            <br />
+            @Html.Label("Kategori:")
+            @Html.DropDownListFor(x => x.categoryID, (List<SelectListItem>)ViewBag.clist, new { @class = "form-control" })
+            <br />
+            @Html.Label("Tarih:")
+            @Html.TextBoxFor(x => x.headindDate, new { @class = "form-control" })
+            <br />
+            @Html.Label("Yazar:")
+            @Html.TextBoxFor(x => x.writerID, new { @class = "form-control" })
+
+            <br /><br />
+            <button class="btn btn-outline-dark">Kaydet</button>
+        </div>
+    }
+</div>

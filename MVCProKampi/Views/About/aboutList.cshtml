@@ -1,0 +1,37 @@
+﻿@model List<EntityLayer.Concrete.About>
+@{
+    ViewBag.Title = "aboutList";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<br />
+<div class="container">
+    <h2 class="content-header">Hakkımzda Listesi</h2>
+</div>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Hakkımızda1</th>
+        <th>Hakkımızda1 Gorsel</th>
+        <th>Hakkımızda2</th>
+        <th>Hakkımızda2 Gorsel</th>
+        <th>Durum</th>
+        <th>Durum</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.aboutID</td>
+            <td>@item.aboutDetails</td>
+            <td>@item.aboutImage</td>
+            <td>@item.aboutDetails2</td>
+            <td>@item.aboutImage2</td>
+            <td><a class="btn btn-success" href="#">Aktif Yap</a></td>
+            <td><a class="btn btn-danger" href="#">Pasif Yap</a></td>
+        </tr>
+    }
+</table>
+<br />
+@Html.Action("aboutAddPartial","About")
+

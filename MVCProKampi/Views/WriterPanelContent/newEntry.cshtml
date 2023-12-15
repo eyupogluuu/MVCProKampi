@@ -1,0 +1,35 @@
+﻿@model EntityLayer.Concrete.Content
+@{
+    ViewBag.Title = "newEntry";
+    Layout = "~/Views/Shared/_writerLayout.cshtml";
+}
+
+
+<br />
+<div class="container">
+    @using (Html.BeginForm("newEntry", "WriterPanelContent", FormMethod.Post))
+    {
+        <div class="">
+          <input type="hidden" name="headingID" value="@ViewBag.d"/>
+            <br />
+            <label>Entry Girin:</label>
+            @Html.TextAreaFor(x => x.contentText,8,30, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.contentText, "", new { @class = "text-danger" })
+            <br />
+            
+            <button class="btn btn-outline-dark">Kaydet</button>
+        </div>
+
+    }
+    @*<form method="post" class="form-control" style="background-color:darkgrey">
+        <br />
+        <input type="text" name="categoryName" placeholder="kategori adı" class="form-control" />
+        <br />
+        <input type="text" name="categoryDescreption" placeholder="kategori aciklama" class="form-control" />
+        <br />
+        <input type="text" name="categoryStatus" placeholder="kategori durumu" class="form-control" />
+        <br />
+        <button class="btn btn-outline-dark">Kaydet</button>*@
+    @*</form>*@
+</div>
+

@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+<br />
+<div class="container"><h2 class="fa-header">İstatistik Sayfası</h2></div>
+<br />
+<br />
+
+
+<body>
+    <div class="py-5">
+        <div class="container">
+            <div class="row hidden-md-up">
+                <div class="col-md-4">
+                    <div class="card" style="background-color:antiquewhite;  width:310px;height:80px;">
+                        <div class="card-block">
+                            <h4 class="card-title"style="margin-left:100px;">@ViewBag.kategorisay</h4>
+                            <h6 class="card-subtitle text-muted"></h6>
+                            <p class="card-text p-y-1">Toplam Kategori Sayısı</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="background-color:antiquewhite;  width:310px;height:80px;">
+                        <div class="card-block">
+                            <h4 class="card-title" style="margin-left:100px;">@ViewBag.basliksay </h4>
+                            <h6 class="card-subtitle text-muted"></h6>
+                            <p class="card-text p-y-1">Spor Kategorisine Ait Başlık Sayısı</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card"style="background-color:antiquewhite;  width:310px;height:80px;">
+                        <div class="card-block">
+                            <h4 class="card-title" style="margin-left:100px;">@ViewBag.yazaradi</h4>
+                            <h6 class="card-subtitle text-muted"></h6>
+                            <p class="card-text p-y-1">Adında A Harfi Olan Yazarların Sayısı</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="background-color:antiquewhite;  width:310px;height:80px;" >
+                        <div class="card-block">
+                            <h4 class="card-title" style="margin-left:100px;"> @ViewBag.dT</h4>
+                            <h6 class="card-subtitle text-muted"></h6>
+                            <p class="card-text p-y-1">En Fazla Başlık Girilen Kategori</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="background-color:antiquewhite; width:310px;height:80px;">
+                        <div class="card-block">
+                            <h4 class="card-title" style="margin-left:100px;">Card title</h4>
+                            <h6 class="card-subtitle text-muted"></h6>
+                            <p class="card-text p-y-1" >Kategori Tablosunda True False Olanlar Arasındaki Fark</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+</body>

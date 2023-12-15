@@ -1,0 +1,28 @@
+﻿
+@model List<EntityLayer.Concrete.Testimonial>
+        <div class="testimonials py-lg-5 py-4" id="clients">
+    <div class="testimonials-inner container py-lg-4 py-3">
+        
+        <h3 class="tittle-w3 text-uppercase mb-lg-5 mb-3 text-center">Proje Hakkında Geri Dönüşler</h3>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                @foreach (var item in Model)
+                {
+                    <div class="carousel-item active">
+                        <div class="testimonials_grid center">
+                            <div class="testimonials_grid-inn text-uppercase">
+                                <i class="fas fa-quote-left"></i>
+                                <p>@item.descreption</p>
+                            </div>
+                            <h3>@item.nameSurname </h3>
+
+                            <label>@item.tittle</label>
+                        </div>
+                    </div>
+
+                }
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+﻿@model List<EntityLayer.Concrete.Tool>
+    @{
+        string color="";
+    }
+<section class="banner-bottom-wthree py-lg-5 py-md-5 py-4" id="about">
+    <div class="container">
+        <div class="inner-sec-w3ls py-lg-5 py-4">
+            <div class="info-about text-center">
+
+                <h3 class="tittle-w3 text-uppercase mb-lg-5 mb-3">Geliştirme Araçları</h3>
+                @foreach (var item in Model)
+                {
+                    if ( item.toolRating>=70 && item.toolRating<=80)
+                    {
+                        color = "danger";
+                    }
+                    if ( item.toolRating>=81 && item.toolRating <= 90)
+                    {
+                        color = "warning";
+                    }
+                    if (item.toolRating>=91 && item.toolRating <= 100)
+                    {
+                        color = "success";
+                    }
+                    <div class="@*row mt-lg-3 mt-1*@">
+                        <div class="@*progress-one my-lg-3*@" data-aos="fade-up">
+                            <h4 class="progress-tittle-w3">@item.toolName</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-@color" role="progressbar" style="width: @item.toolRating%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

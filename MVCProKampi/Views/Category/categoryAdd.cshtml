@@ -1,0 +1,37 @@
+﻿@model EntityLayer.Concrete.Category
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<br />
+<div class="container">
+    <h2 class="offcanvas-header" style="margin-left:350px;">Yeni Kategori Ekleme Sayfası</h2>
+</div>
+<br />
+<div class="container">
+    @using (Html.BeginForm("categoryAdd", "Category", FormMethod.Post))
+    {
+        <div class="form-control">
+            @Html.Label("Kategori Adı:")
+            @Html.TextBoxFor(x => x.categoryName, new {@class="form-control"})
+            @Html.ValidationMessageFor(x => x.categoryName,"", new { @class = "text-danger" })
+            <br />
+            @Html.Label("Kategori Açıklama:")
+            @Html.TextBoxFor(x => x.categoryDescription, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.categoryDescription, "", new { @class = "text-danger" })
+            <br /><br />
+            <button class="btn btn-outline-dark">Kaydet</button>
+        </div>
+
+    }
+    @*<form method="post" class="form-control" style="background-color:darkgrey">
+        <br />
+        <input type="text" name="categoryName" placeholder="kategori adı" class="form-control" />
+        <br />
+        <input type="text" name="categoryDescreption" placeholder="kategori aciklama" class="form-control" />
+        <br />
+        <input type="text" name="categoryStatus" placeholder="kategori durumu" class="form-control" />
+        <br />
+        <button class="btn btn-outline-dark">Kaydet</button>*@
+    @*</form>*@
+</div>

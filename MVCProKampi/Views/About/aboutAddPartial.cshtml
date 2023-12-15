@@ -1,0 +1,27 @@
+﻿<button class="btn btn-outline-dark" data-toggle="modal" data-target="#Modal1"> Ekle</button>
+<br />
+<div class="modal" id="Modal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="fc-header-title">Hakkımızda Pop-Up</h2>
+            </div>
+            <form method="post" action="/About/aboutAdd">
+                <div class="modal-body">
+                    <label>Hakkımızda 1</label>
+                    <input type="text" name="aboutDetails" value="" class="form-control" />
+                    <br />
+                    <label>Hakkımızda 1 Görsel</label>
+                    <input type="text" name="aboutImage" value="" class="form-control" />
+                    <br /><label>Hakkımızda 2</label>
+                    <input type="text" name="aboutDetails2" value="" class="form-control" />
+                    <br />
+                    <label>Hakkımızda 2 Görsel</label>
+                    <input type="text" name="aboutImage2" value="" class="form-control" />
+                    <br />
+                    <button class="btn btn-outline-dark">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

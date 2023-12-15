@@ -1,0 +1,15 @@
+N Katmanlı Mimari
+DB First
+İlişki Tablolar
+Design Pattern
+Fluent Validation
+Pop-up Modal
+404 Page
+Partial View
+Rollendirme
+Authentication
+Login
+Logout
+Paged(sayfalama)
+Search İşlemi
+Raporlama

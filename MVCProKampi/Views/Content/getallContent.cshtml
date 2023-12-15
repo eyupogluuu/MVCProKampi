@@ -1,0 +1,32 @@
+﻿@model List<EntityLayer.Concrete.Content>
+@{
+    ViewBag.Title = "getallContent";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+<br />
+@using (Html.BeginForm("getallContent", "Content", FormMethod.Post))
+{
+        <p class="form-class">aranacak kelime : @Html.TextBox("p")</p>@*<input type="submit" value="Ara" />*@
+        
+       
+}
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Girilen Entry</th>
+        <th>Yazarı</th>
+        <th>Başlığı</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.contentText</td>
+            <td>@item.writer.writerName @item.writer.writerSurname</td>
+            <td>@item.heading.headingName</td>
+            
+        </tr>
+        
+    }
+
+</table>
+
