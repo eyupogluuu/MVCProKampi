@@ -1,5 +1,5 @@
 # MVC Proje Kampi
- Proje N-katmanlı mimari üzerine inşa edilmiştir. Code-first yaklaşımıyla oluşturulan proje, MVC Web  projesidir.. <br>
+ Proje N-katmanlı mimari üzerine inşa edilmiştir. Code-first yaklaşımıyla oluşturulan proje, MVC Web  projesidir. <br>
 
 <br>
 
